@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    color: #2e3837;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@font-face{
+  font-family: Negra;
+  src: url("/Modern Negra Demo.ttf");
+}
+.Negra{
+  font-family: Negra;
+}
+@utility flex-center{
+  @apply flex justify-center items-center
+}
+@font-face {
+  font-family: Mono;
+  src: url("/Mono_sans.ttf");
+}
+.mask{
+  mask-image:url("/mask-img.png");
+  mask-size: 50%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+html{
+  scroll-behavior: smooth;
+}
