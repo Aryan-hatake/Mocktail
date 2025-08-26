@@ -108,7 +108,7 @@ const Art = () => {
                          </div>
                            <div className='Negra text-4xl sm:text-6xl md:text-7xl   flex flex-col items-center   z-10  pt-24'>
                             <h1 className='will-fade'>Sip-Worthy Perfection</h1>
-                            <div className='masked-content opacity-0  relative z-100'>
+                            <div className='masked-content opacity-0 w-[80vw] flex flex-col justify-center items-center  relative z-100'>
                               <h1>Made with Craft Poured with Passion</h1> 
                               <p className='text-xl font-sans mx-auto w-fit'>This isn’t just a drink It’s a carefully crafted moment made just for you.</p>
                               </div>

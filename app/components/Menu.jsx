@@ -147,7 +147,7 @@ const Menu = () => {
     return (
 
 
-        <div className=' w-[100vw] h-[110vh] menu-cont  md:mt-50'>
+        <div className=' w-[100vw] h-[110vh] menu-cont  md:mt-50 lg:mt-[500px]  '>
             <div className=" h-full w-full relative hoja top-20  bg-[radial-gradient(farthest-side,#2e3837,black)] pt-20">
                 <div className="absolute bottom-20 slider-left">
                     <img src="/slider-left-leaf.png" alt="" />
@@ -166,12 +166,12 @@ const Menu = () => {
                     Active == i && (
                         <div key={i}>
                             <div className='w-full h-[60vh] mt-10 flex items-center relative py-4 justify-center'>
-                                    <div className='text-amber-400 prevtext md:text-2xl  top-50 left-4  md:top-45 absolute md:left-20 lg:left-45 lg:top-40 Negra'>{menu[Previous].drink}</div>
+                                    <div className='text-amber-400 prevtext md:text-2xl  top-40 left-4  md:top-45 absolute md:left-20 lg:left-45 lg:top-40 Negra'>{menu[Previous].drink}</div>
                                 <div className="slide-right absolute z-20 left-10 md:left-30 md:top-30 lg:top-50 lg:left-50  cursor-pointer" onClick={() => { goRight(i) }}>
                                     <img src="/right-arrow.png" alt="" /> 
                                 </div>
                                 <img src={e.img} className='cockimg' alt="img" />
-                                    <div className='text-amber-400 nexttext md:text-2xl top-50  right-4  md:top-45 absolute md:right-20 lg:right-38 lg:top-40  Negra'>{menu[Next].drink}</div>
+                                    <div className='text-amber-400 nexttext md:text-2xl top-40  right-4  md:top-45 absolute md:right-20 lg:right-38 lg:top-40  Negra'>{menu[Next].drink}</div>
                                 <div className="slide-left absolute z-20 md:right-30 right-10 md:top-30 lg:top-50 lg:right-50 cursor-pointer" onClick={() => { goLeft(i) }}>
                                     <img src="/left-arrow.png" alt="" />
                                 </div>
