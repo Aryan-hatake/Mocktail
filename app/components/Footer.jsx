@@ -7,6 +7,8 @@ import { useMediaQuery } from 'react-responsive'
 import SplitText from 'gsap/SplitText'
 
 const Footer = () => {
+
+    gsap.registerPlugin(ScrollTrigger,SplitText)
    
     const isMobile = useMediaQuery({ maxWidth: 768 });
    useGSAP(()=>{
